@@ -6,6 +6,7 @@
 		"outDir": "./dist",
 		"jsx": "react",
 		"esModuleInterop": true,
+		"skipLibCheck": true
 	},
 	"include": [
 		"src/**/*"
