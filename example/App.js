@@ -1,6 +1,5 @@
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { StatusBar } from 'expo-status-bar';
-import { ActivityIndicator, Button, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { Button, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { createMasterDetailNavigator } from 'react-navigation-master-detail-navigator'
 
 const Master = ({ navigation }) => {
