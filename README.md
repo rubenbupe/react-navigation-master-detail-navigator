@@ -19,6 +19,8 @@ npm install --save https://github.com/rubenbupe/react-navigation-master-detail-n
 
 You can also fork this repository and install it from that fork.
 
+Basic usage: 
+
 ```javascript
 import { createMasterDetailNavigator } from 'react-navigation-master-detail-navigator'
 
