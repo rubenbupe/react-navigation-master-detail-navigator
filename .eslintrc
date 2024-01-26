@@ -1,0 +1,86 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"root": true,
+	"parserOptions": {
+		"requireConfigFile": false,
+		"ecmaFeatures": {
+			"jsx": true
+		}
+	},
+	"ignorePatterns": [
+		"*.json"
+	],
+	"plugins": [
+		"react",
+		"react-native",
+		"jsx",
+		"@typescript-eslint"
+	],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-uses-react": 1,
+		"react/jsx-uses-vars": 1,
+		"react/display-name": "off",
+		"react/prop-types": "off",
+		"quotes": [
+			2,
+			"single",
+			{
+				"avoidEscape": true
+			}
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		"no-tabs": 0,
+		"unused-imports/no-unused-imports": "error",
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"index",
+					"sibling",
+					"parent",
+					"internal",
+					"external",
+					"builtin",
+					"object",
+					"type"
+				]
+			}
+		],
+		"react/jsx-filename-extension": [
+			"warn",
+			{
+				"extensions": [
+					".tsx"
+				]
+			}
+		],
+		"@typescript-eslint/no-explicit-any": "off",
+		"camelcase": [
+			"error",
+			{
+				"properties": "never",
+				"allow": [
+					"unstable_settings"
+				],
+				"ignoreDestructuring": true
+			}
+		],
+		"no-use-before-define": "off",
+		"prefer-promise-reject-errors": "off"
+	},
+	"extends": [
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true,
+		"react-native/react-native": true
+	}
+}
